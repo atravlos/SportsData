@@ -2,11 +2,11 @@
 import streamlit as st
 import pandas as pd
 
-selected_tab = st.sidebar.radio("Content", options=["Overview", "Medalists Data", "Notable Olympic Games"])
+selected_tab = st.sidebar.radio("Contents", options=["Overview", "Medalists Data", "Notable Olympic Games"])
 
 if selected_tab == "Overview":
     st.title("Welcome to the Olympics Navigation Tool!")
-    #st.image("OlympicRings(3).jpeg")
+    st.image("OlympicRings(3).jpeg")
     st.markdown("""
     ## About
 
@@ -22,7 +22,7 @@ if selected_tab == "Overview":
 elif selected_tab == "Medalists Data":
 
         # Load Medalist Data
-        df = pd.read_csv("athlete_events.csv")
+        df = pd.read_csv("athlete_events(1).csv")
         df["Year"] = df["Year"].astype(str)
         df = df[df["Medal"].isin(["Gold", "Silver", "Bronze"])]
         df.head(10)
