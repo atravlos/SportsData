@@ -2,10 +2,22 @@
 import streamlit as st
 import pandas as pd
 
-selected_tab = st.sidebar.radio("Contents", options=["Overview", "Medalists Data", "Notable Olympic Games"])
+selected_tab = st.sidebar.radio("Content", options=["Overview", "Medalists Data", "Notable Olympic Games"])
 
 if selected_tab == "Overview":
-    st.header("Welcome to the Olympics Navigation Tool!")
+    st.title("Welcome to the Olympics Navigation Tool!")
+    st.image("OlympicRings.png")
+    st.markdown("""
+    ## About
+
+    This is a tool that allows users to both filter through Olympic medalist data and read about notable Olympic games.
+
+    ## Table of Contents
+
+    - **Overview**
+    - **Medalists Data**
+    - **Notable Olympic Games**
+    """)
 
 elif selected_tab == "Medalists Data":
 
@@ -92,7 +104,7 @@ elif selected_tab == "Medalists Data":
             filtered_df = filtered_df[filtered_df["Medal"].isin(selected_medals)]
         # Year filter: if a specific year is selected (not "All")
         if selected_year != "All":
-            filtered_df = filtered_df[filtered_df["Year"] == int(selected_year)]
+            filtered_df = filtered_df[filtered_df["Year"] == selected_year]
 
         # ============================================================================
         # Display the Filtered Data
@@ -110,25 +122,25 @@ elif selected_tab == "Notable Olympic Games":
                                             "Summer 2021 - Tokyo, Japan"])
 
     with tab1:
-        st.header("Summer 1896 - Athens, Greece : The First Modern Olympic Games")
+        st.title("Summer 1896 - Athens, Greece : The First Modern Olympic Games")
         st.image("Athens1896Stadium.jpg", caption="Olympic Stadium, Athens, Greece 1896")
 
     with tab2:
-        st.header("Winter 1924 - Charmonix France : The Inaugural Winter Olympic Games")
+        st.title("Winter 1924 - Charmonix France : The Inaugural Winter Olympic Games")
         st.image("1924Winter.jpg", caption="10,000 m Speed-Skating Event in Charmonix, France, 1924")
 
     with tab3:
-        st.header("Summer 1936 - Berlin, Germany : Olympics and World War II")
+        st.title("Summer 1936 - Berlin, Germany : Olympics and World War II")
         st.image("BerlinStadium.jpg", caption="Olympic Stadium, Berlin, Germany 1936")
 
     with tab4:
-        st.header("Winter 1980 - Lake Placid, USA : 'Miracle on Ice'")
+        st.title("Winter 1980 - Lake Placid, USA : 'Miracle on Ice'")
 
         st.image("LakePlacid.jpg", caption="Olympic Stadium 1980, Lake Placid, USA")
 
-        st.header("Summer 1980 - Moscow, Soviet Union : Boycott")
+        st.title("Summer 1980 - Moscow, Soviet Union : Boycott")
         st.image("1980Summer.jpg", caption="Olympic Stadium 1980, Moscow, Russia")
 
     with tab5:
-        st.header("Summer 2021 - Tokyo, Japan : The COVID Olympics")
+        st.title("Summer 2021 - Tokyo, Japan : The COVID Olympics")
         st.image("TokyoSummer.jpg", caption="Olympic Flyer, Tokyo, Japan, 2021")
