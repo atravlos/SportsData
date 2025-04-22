@@ -1,7 +1,6 @@
 # Import the Streamlit library
 import streamlit as st
 import pandas as pd
-from PIL import Image
 
 selected_tab = st.sidebar.radio("Contents", options=["Overview", "Medalists Data", "Notable Olympic Games"])
 
