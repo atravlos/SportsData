@@ -6,7 +6,7 @@ selected_tab = st.sidebar.radio("Content", options=["Overview", "Medalists Data"
 
 if selected_tab == "Overview":
     st.title("Welcome to the Olympics Navigation Tool!")
-    st.image("OlympicRings.png")
+    st.image("OlympicRings(2).png")
     st.markdown("""
     ## About
 
