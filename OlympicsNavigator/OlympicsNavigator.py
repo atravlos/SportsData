@@ -29,7 +29,7 @@ elif selected_tab == "Medalists Data":
 
         # Dashboard title
         st.title("Olympic Athletes Dashboard")
-        st.image("medalpodium.jpg", caption="Rio 2016")
+        # st.image("medalpodium.jpg", caption="Rio 2016")
         # ============================================================================
         # Cascading Filters: Season -> Sport -> Event (with "All" as default)
         # ============================================================================
@@ -122,24 +122,24 @@ elif selected_tab == "Notable Olympic Games":
 
     with tab1:
         st.title("Summer 1896 - Athens, Greece : The First Modern Olympic Games")
-        st.image("Athens1896Stadium.jpg", caption="Olympic Stadium, Athens, Greece 1896")
+        #st.image("Athens1896Stadium.jpg", caption="Olympic Stadium, Athens, Greece 1896")
 
     with tab2:
         st.title("Winter 1924 - Charmonix France : The Inaugural Winter Olympic Games")
-        st.image("1924Winter.jpg", caption="10,000 m Speed-Skating Event in Charmonix, France, 1924")
+        #st.image("1924Winter.jpg", caption="10,000 m Speed-Skating Event in Charmonix, France, 1924")
 
     with tab3:
         st.title("Summer 1936 - Berlin, Germany : Olympics and World War II")
-        st.image("BerlinStadium.jpg", caption="Olympic Stadium, Berlin, Germany 1936")
+        #st.image("BerlinStadium.jpg", caption="Olympic Stadium, Berlin, Germany 1936")
 
     with tab4:
         st.title("Winter 1980 - Lake Placid, USA : 'Miracle on Ice'")
 
-        st.image("LakePlacid.jpg", caption="Olympic Stadium 1980, Lake Placid, USA")
+        #st.image("LakePlacid.jpg", caption="Olympic Stadium 1980, Lake Placid, USA")
 
         st.title("Summer 1980 - Moscow, Soviet Union : Boycott")
-        st.image("1980Summer.jpg", caption="Olympic Stadium 1980, Moscow, Russia")
+        #st.image("1980Summer.jpg", caption="Olympic Stadium 1980, Moscow, Russia")
 
     with tab5:
         st.title("Summer 2021 - Tokyo, Japan : The COVID Olympics")
-        st.image("TokyoSummer.jpg", caption="Olympic Flyer, Tokyo, Japan, 2021")
+        #st.image("TokyoSummer.jpg", caption="Olympic Flyer, Tokyo, Japan, 2021")
