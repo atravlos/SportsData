@@ -123,10 +123,10 @@ elif selected_tab == "Notable Olympic Games":
     
     with tab2:
         st.title("Winter 1924 - Charmonix France : The Inaugural Winter Olympic Games")
-        st.image("Charmonix1924.jpg", caption = "Offical Stand in Charmonix, France. 1924")
+        #st.image("OlympicsNavigator/images/Charmonix1924.jpg", caption = "Offical Stand in Charmonix, France. 1924")
     with tab3:
         st.title("Summer 1936 - Berlin, Germany : Olympics and World War II")
-        st.image("OlympicsNavigator/images/Berlin1936.jpg", caption = "Jesse Owens wins 1 of his 4 gold medals at the Berlin 1936 Olympics.")
+        #st.image("OlympicsNavigator/images/Berlin1936.jpg", caption = "Jesse Owens wins 1 of his 4 gold medals at the Berlin 1936 Olympics.")
     
     with tab4:
         st.title("Winter 1980 - Lake Placid, USA : 'Miracle on Ice'")
