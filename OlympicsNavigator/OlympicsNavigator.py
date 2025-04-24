@@ -1,12 +1,12 @@
 # Import the Streamlit library
 import streamlit as st
-from pathlib import Path
 import pandas as pd
 
 selected_tab = st.sidebar.radio("Contents", options=["Overview", "Medalists Data", "Notable Olympic Games"])
 
 if selected_tab == "Overview":
     st.title("Welcome to the Olympics Navigation Tool!")
+    st.image("OlympicsNavigator/images/olympicrings.jpeg")
     st.markdown("""
     ## About
 
