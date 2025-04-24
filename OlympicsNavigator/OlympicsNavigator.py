@@ -1,5 +1,6 @@
 # Import the Streamlit library
 import streamlit as st
+from pathlib import Path
 import pandas as pd
 
 selected_tab = st.sidebar.radio("Contents", options=["Overview", "Medalists Data", "Notable Olympic Games"])
@@ -21,7 +22,7 @@ if selected_tab == "Overview":
 elif selected_tab == "Medalists Data":
 
         # Load Medalist Data
-        df = pd.read_csv("data/olympicmedalists.csv")
+        df = pd.read_csv("OlympicsNavigator/data/olympicmedalists.csv")
 
         # Dashboard title
         st.title("Olympic Athletes Dashboard")
