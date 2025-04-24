@@ -26,6 +26,7 @@ elif selected_tab == "Medalists Data":
 
         # Dashboard title
         st.title("Olympic Athletes Dashboard")
+        st.image("OlympicsNavigator/images/OlympicsPodium.jpg")
         # ============================================================================
         # Cascading Filters: Season -> Sport -> Event (with "All" as default)
         # ============================================================================
