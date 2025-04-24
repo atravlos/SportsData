@@ -126,12 +126,15 @@ elif selected_tab == "Notable Olympic Games":
         st.image("OlympicsNavigator/images/Charmonix1924.jpg")
     with tab3:
         st.title("Summer 1936 - Berlin, Germany : Olympics and World War II")
+        st.image("OlympicsNavigator/images/Berlin1936.jpg")
     
     with tab4:
         st.title("Winter 1980 - Lake Placid, USA : 'Miracle on Ice'")
-
+        st.image("OlympicsNavigator/images/LakePlacid1980.jpeg")
 
         st.title("Summer 1980 - Moscow, Soviet Union : Boycott")
+        st.image("OlympicsNavigator/images/Summer1980.jpg")
 
     with tab5:
         st.title("Summer 2021 - Tokyo, Japan : The COVID Olympics")
+        st.image("OlympicsNavigator/images/2021Summer.jpg")
