@@ -123,7 +123,7 @@ elif selected_tab == "Notable Olympic Games":
     
     with tab2:
         st.title("Winter 1924 - Charmonix France : The Inaugural Winter Olympic Games")
-
+        st.image("OlympicsNavigator/images/Charmonix1924.jpg")
     with tab3:
         st.title("Summer 1936 - Berlin, Germany : Olympics and World War II")
     
