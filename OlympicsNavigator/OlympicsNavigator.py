@@ -125,15 +125,11 @@ elif selected_tab == "Notable Olympic Games":
         
         st.markdown("""## Summary
 
-The Olympics are here! It is fitting that the first ever modern Olympic games were hosted in Athens, Greece, the birthplace of the ancient Olympic Games.  
-These games took place from April 6 – April 15 and included 43 events with about 280 athletes from 14 nations. The Opening Ceremony was held in the Panathenaic Stadium (shown above).  
-This was the original stadium built for the ancient Olympics that was later excavated and rebuilt for these Olympic games.
+The Olympics are here! It is fitting that the first ever modern Olympic games were hosted in Athens, Greece, the birthplace of the ancient Olympic Games. These games took place from April 6 – April 15 and included 43 events with about 280 athletes from 14 nations. The Opening Ceremony was held in the Panathenaic Stadium (shown above). This was the original stadium built for the ancient Olympics that was later excavated and rebuilt for these Olympic games.
 
-A French aristocrat by the name of Pierre, baron de Coubertin pioneered the movement for an international Olympic Games and was a founding member of the  
-[International Olympic Committee (IOC)](https://olympics.com/ioc). As a result, Coubertin also served as the president of the 1896 games.
+A French aristocrat by the name of Pierre, baron de Coubertin pioneered the movement for an international Olympic Games and was a founding member of the [International Olympic Committee (IOC)](https://olympics.com/ioc). As a result, Coubertin also served as the president of the 1896 games.
 
-Though the Olympics of today still bear the same name, the events of 1896 looked much different. For example, rather than the modern Olympic pools  
-that exist today for the swimming events, swimmers in the 1896 games were transported by boat out to sea and left to swim the required distance back to shore.
+Though the Olympics of today still bear the same name, the events of 1896 looked much different. For example, rather than the modern Olympic pools that exist today for the swimming events, swimmers in the 1896 games were transported by boat out to sea and left to swim the required distance back to shore.
 """)
 
     with tab2:
