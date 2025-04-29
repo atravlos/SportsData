@@ -119,22 +119,41 @@ elif selected_tab == "Notable Olympic Games":
 
     with tab1:
         st.title("Summer 1896 - Athens, Greece : The First Modern Olympic Games")
+
         st.image("OlympicsNavigator/images/1896Athens.jpg")
-    
+        st.caption("Panathaneic Stadium - Athens, Greece. 1896")
+        
+        st.markdown("""## Summary
+                    
+                    The Olympics are here! It is fitting that the first ever modern Olympic games were hosted in Athens, Greece, the birthplace of the ancient Olympic Games.
+                    These games took place from April 6 - April 15, included 43 events, and about 280 athletes. The Opening Ceremony was held in the Panathenaic Stadium (showed above). This was the original stadium built for the ancient Olympics
+                    that was later excavated and rebuilt for these olympic games.
+                    
+                    ## Notable Headlines
+                    - [Local hero Spyridon Louis earns cult status in marathon](https://www.olympics.com/en/news/local-hero-louis-earns-cult-status-in-marathon)")
+                    -  """)
+
+
     with tab2:
         st.title("Winter 1924 - Charmonix France : The Inaugural Winter Olympic Games")
         st.image("OlympicsNavigator/images/Charmonix1924.jpg")
+        st.caption("Olympic Stand - Charmonix France. 1924")
+
     with tab3:
         st.title("Summer 1936 - Berlin, Germany : Olympics and World War II")
         st.image("OlympicsNavigator/images/Berlin1936.jpg")
-    
+        st.caption("Jesse Owens winning 1 of his 4 gold medals. 1936")
+
     with tab4:
         st.title("Winter 1980 - Lake Placid, USA : 'Miracle on Ice'")
         st.image("OlympicsNavigator/images/LakePlacid1980.jpeg")
+        st.caption("Winter Olympics Opening Ceremony - Lake Placid, USA. 1980")
 
         st.title("Summer 1980 - Moscow, Soviet Union : Boycott")
         st.image("OlympicsNavigator/images/Summer1980.jpg")
+        st.caption("Summer Olympics Opening Ceremony - Moscow, Soviet Union. 1980")
 
     with tab5:
         st.title("Summer 2021 - Tokyo, Japan : The COVID Olympics")
         st.image("OlympicsNavigator/images/2021Summer.jpg")
+        st.caption("2021 Summer Olympics Flyer")
