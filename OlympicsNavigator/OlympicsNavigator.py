@@ -123,16 +123,16 @@ elif selected_tab == "Notable Olympic Games":
         st.image("OlympicsNavigator/images/1896Athens.jpg")
         st.caption("Panathaneic Stadium - Athens, Greece. 1896")
         
-        st.markdown("""## Summary
-                    
+        st.markdown("""## Summary"""
+        st.write(
                     The Olympics are here! It is fitting that the first ever modern Olympic games were hosted in Athens, Greece, the birthplace of the ancient Olympic Games.
                     These games took place from April 6 - April 15, included 43 events, and about 280 athletes. The Opening Ceremony was held in the Panathenaic Stadium (showed above). This was the original stadium built for the ancient Olympics
                     that was later excavated and rebuilt for these olympic games.
                     
                     ## Notable Headlines
                     - [Local hero Spyridon Louis earns cult status in marathon](https://www.olympics.com/en/news/local-hero-louis-earns-cult-status-in-marathon)")
-                    -  """)
-
+                    - 
+        )
 
     with tab2:
         st.title("Winter 1924 - Charmonix France : The Inaugural Winter Olympic Games")
