@@ -123,7 +123,7 @@ elif selected_tab == "Notable Olympic Games":
         st.image("OlympicsNavigator/images/1896Athens.jpg")
         st.caption("Panathaneic Stadium - Athens, Greece. 1896")
         
-        st.markdown("""## Summary"""
+        st.markdown("""## Summary""")
         st.write("""
                  
                     The Olympics are here! It is fitting that the first ever modern Olympic games were hosted in Athens, Greece, the birthplace of the ancient Olympic Games.
