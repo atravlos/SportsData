@@ -135,7 +135,7 @@ Though the Olympics of today still bare the same name, the events of 1896 looked
     with tab2:
         st.title("Winter 1924 - Chamonix France : The Inaugural Winter Olympic Games")
 
-        st.image("OlympicsNavigator/images/Chramonix1924.jpg")
+        st.image("OlympicsNavigator/images/Charmonix1924.jpg")
         st.caption("Olympic Stand - Chamonix France. 1924")
 
         st.markdown("""## Summary
