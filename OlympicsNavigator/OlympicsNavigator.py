@@ -140,12 +140,12 @@ Though the Olympics of today still bare the same name, the events of 1896 looked
 
         st.markdown("""## Summary
                     
-                    The games held in Chamonix, France in 1924 were first known as "Winter Sports Week" at the time of their occurrence and then retroactively deemed the First Olympic Wnter Games by the IOC in 1926. Chamonix was a perfect location as it sits at the base of Europe's tallest mountain, Mont Blanc. The Games consisted of over 10,000 spectators watching 258 athletes from 16 nations (estimated numbers) competing in 16 events across five sports (Bobsleigh, Curling, Ice Hockey, Skating, and Nordic Skiing) over the course of 11 days.
+The games held in Chamonix, France in 1924 were first known as "Winter Sports Week" at the time of their occurrence and then retroactively deemed the First Olympic Wnter Games by the IOC in 1926. Chamonix was a perfect location as it sits at the base of Europe's tallest mountain, Mont Blanc. The Games consisted of over 10,000 spectators watching 258 athletes from 16 nations (estimated numbers) competing in 16 events across five sports (Bobsleigh, Curling, Ice Hockey, Skating, and Nordic Skiing) over the course of 11 days.
                     
-                    Some notable performances from these games were Charles Jewtraw (USA) taking home the first Olympic gold medal in the 500m speed skating and the Canadian Hockey Team winning their gold medal with a point differential of +119!
+ Some notable performances from these games were Charles Jewtraw (USA) taking home the first Olympic gold medal in the 500m speed skating and the Canadian Hockey Team winning their gold medal with a point differential of +119!
 
-                    The Winter Olympic Games we know today look drastically different than the Chamonix Games. For example, athletes used to have to carry their gear and equipment with them during the Opening Ceremony, bobsleigh teams did not wear helmets, and hockey players did not wear helmets or gloves! 
-                    """)
+The Winter Olympic Games we know today look drastically different than the Chamonix Games. For example, athletes used to have to carry their gear and equipment with them during the Opening Ceremony, bobsleigh teams did not wear helmets, and hockey players did not wear helmets or gloves! 
+""")
 
     with tab3:
         st.title("Summer 1936 - Berlin, Germany : Olympics and World War II")
