@@ -142,15 +142,26 @@ Though the Olympics of today still bare the same name, the events of 1896 looked
                     
 The games held in Chamonix, France in 1924 were first known as "Winter Sports Week" at the time of their occurrence and then retroactively deemed the First Olympic Wnter Games by the IOC in 1926. Chamonix was a perfect location as it sits at the base of Europe's tallest mountain, Mont Blanc. The Games consisted of over 10,000 spectators watching 258 athletes from 16 nations (estimated numbers) competing in 16 events across five sports (Bobsleigh, Curling, Ice Hockey, Skating, and Nordic Skiing) over the course of 11 days.
                     
- Some notable performances from these games were Charles Jewtraw (USA) taking home the first Olympic gold medal in the 500m speed skating and the Canadian Hockey Team winning their gold medal with a point differential of +119!
+Some notable performances from these games were Charles Jewtraw (USA) taking home the first Olympic gold medal in the 500m speed skating and the Canadian Hockey Team winning their gold medal with a point differential of +119!
 
 The Winter Olympic Games we know today look drastically different than the Chamonix Games. For example, athletes used to have to carry their gear and equipment with them during the Opening Ceremony, bobsleigh teams did not wear helmets, and hockey players did not wear helmets or gloves! 
 """)
 
     with tab3:
         st.title("Summer 1936 - Berlin, Germany : Olympics and World War II")
+
         st.image("OlympicsNavigator/images/Berlin1936.jpg")
         st.caption("Jesse Owens winning 1 of his 4 gold medals. 1936")
+
+        st.markdown("""## Summary
+
+In 1931, the IOC awarded the 1936 Summer Olympic bid to Berlin, Germany to signify their return to the global community following World War I. However, the following years were characterized by the rise of the Nazi regime in Germany sparking controversy as the host of the Olympic games. German abolition of Jewish athletes from their national delegation sparked discussions of boycott that yielded no action; only the Soviet Union chose not to participate.
+                    
+Ultimately, the 1936 Summer Olympic Games hosted 49 delegations, 3,963 athletes, and 129 events. The games are best remembered for Jesse Owens' spectacular performance as a dagger to the Nazi regime's attempt to promote Aryan racial superiority. Jesse Owens, a black American track star won 4 gold medals in the 100m, 200m, 4x100m relay, and the long jump. Another inspiring story arose out of the friendship of 2 Japanese pole vaulters, Sueo Oe and Shuhei Nishida who both tied for second place. Out of mutual respect for one another, the two pole vaulters declined a jump-off tiebreaker. After returning to Japan, the two exchanged halves of medals so they each possess a half silver medal and a half bronze medal. These medals have been termed "The Friendship Medals."
+
+Finally, the Berlin Olympic Games saw a lot of firsts. Sports like basketball, canoeing, and handball made their Olympic debuts. Additionally, American Marjorie Gestring became the youngest gold medalist, taking home the gold in springboard diving at just 13-years-old. However, it was 12-year-old Inge Sorensen from Denmark who became the youngest medalist of all time taking home the bronze in breastroke.
+
+""")
 
     with tab4:
         st.title("Winter 1980 - Lake Placid, USA : 'Miracle on Ice'")
