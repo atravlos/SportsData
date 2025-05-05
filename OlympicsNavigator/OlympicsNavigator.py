@@ -116,13 +116,9 @@ elif selected_tab == "Olympics Around the World":
     # Load dataset
     df = pd.read_csv("OlympicsNavigator/data/hosts.csv")
 
-    # Add Season column
-    df['Season'] = df.apply(lambda row: 'Summer' if pd.notna(row['Summer']) else 'Winter', axis=1)
-
     # Add hover text
     df['HoverText'] = df.apply(lambda row: f"{row['Summer'] if pd.notna(row['Summer']) else row['Winter']} Olympics<br>"
                                         f"Year: {row['Year']}<br>"
-                                        f"Season: {row['Season']}<br>"
                                         f"City: {row['City']}<br>"
                                         f"Country: {row['Country']}", axis=1)
 
