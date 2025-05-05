@@ -1,10 +1,10 @@
-# Import the Streamlit library
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 
 selected_tab = st.sidebar.radio("Contents", options=["Overview", "Medalists Data", "Olympics Around the World", "Notable Olympic Games", "Works Cited"])
 
+# About Page
 if selected_tab == "Overview":
     st.title("Welcome to the Olympics Navigation Tool!")
     st.image("OlympicsNavigator/images/olympicrings.jpeg")
@@ -17,9 +17,12 @@ if selected_tab == "Overview":
 
     - **Overview**
     - **Medalists Data**
+    - **Olympics Around the World**
     - **Notable Olympic Games**
+    - **Works Cited**
     """)
 
+# Data Filtering Page
 elif selected_tab == "Medalists Data":
 
         # Load Medalist Data
@@ -28,12 +31,12 @@ elif selected_tab == "Medalists Data":
         # Dashboard title
         st.title("Olympic Athletes Dashboard")
         st.image("OlympicsNavigator/images/OlympicsPodium.jpg")
-        # ============================================================================
+
         # Cascading Filters: Season -> Sport -> Event (with "All" as default)
-        # ============================================================================
+
         st.header("Filters")
 
-        # --- Season Filter ---
+        # Season Filter
         seasons = sorted(df["Season"].unique())
         season_options = ["All"] + seasons
         selected_season = st.selectbox("Select Season", options=season_options, index=0)
@@ -44,7 +47,7 @@ elif selected_tab == "Medalists Data":
         else:
             df_season = df[df["Season"] == selected_season]
 
-        # --- Sport Filter ---
+        # Sport Filter
         sports = sorted(df_season["Sport"].unique())
         sport_options = ["All"] + sports
         selected_sport = st.selectbox("Select Sport", options=sport_options, index=0)
@@ -55,33 +58,31 @@ elif selected_tab == "Medalists Data":
         else:
             df_sport = df_season[df_season["Sport"] == selected_sport]
 
-        # --- Event Filter ---
+        # Event Filter
         events = sorted(df_sport["Event"].unique())
         event_options = ["All"] + events
         selected_event = st.selectbox("Select Event", options=event_options, index=0)
 
-        # ============================================================================
         # Independent Filters: Country, Medal, and Year (default to "All")
-        # ============================================================================
 
-        # --- Country Filter ---
+        # Country Filter
         countries = sorted(df["NOC"].unique())
         country_options = ["All"] + countries
         selected_countries = st.multiselect("Select Country/Countries", options=country_options, default=["All"])
 
-        # --- Medal Filter ---
+        # Medal Filter
         medals = sorted(df["Medal"].unique())
         medal_options = ["All"] + medals
         selected_medals = st.multiselect("Select Medal Type(s)", options=medal_options, default=["All"])
 
-        # --- Year Filter ---
+        # Year Filter
         years = sorted(df["Year"].unique())
         year_options = ["All"] + [str(year) for year in years]
         selected_year = st.selectbox("Select Year", options=year_options, index=0)
 
-        # ============================================================================
+
         # Apply All Filters to the DataFrame
-        # ============================================================================
+
         filtered_df = df.copy()
 
         # Apply cascading filters (Season, Sport, Event)
@@ -103,17 +104,15 @@ elif selected_tab == "Medalists Data":
         if selected_year != "All":
             filtered_df = filtered_df[filtered_df["Year"] == selected_year]
 
-        # ============================================================================
         # Display the Filtered Data
-        # ============================================================================
         st.subheader("Filtered Results")
         st.dataframe(filtered_df)
 
-elif selected_tab == "Olympics Around the World":
-    # Set page title
-    st.title("Olympics Around the World: Host Cities Map")
+# Map Page
 
-    # Load dataset
+elif selected_tab == "Olympics Around the World":
+
+    st.title("Olympics Around the World: Host Cities Map")
     hosts = pd.read_csv("OlympicsNavigator/data/hosts.csv")
 
     # Create a 'Season' column based on which column is not null
@@ -136,12 +135,12 @@ elif selected_tab == "Olympics Around the World":
         title="Olympic Host Cities"
     )
 
-    # Adjust map and hover appearance
     fig.update_geos(showcountries=True, showcoastlines=True, showland=True, fitbounds="locations")
     fig.update_layout(legend_title_text='Olympic Season')
 
-    # Display map in Streamlit
     st.plotly_chart(fig, use_container_width=True)
+
+# Notable Olympics Page
 
 elif selected_tab == "Notable Olympic Games":
 
@@ -231,10 +230,8 @@ In March of 2020, the COVID-19 pandemic swept across the globe causing many even
 Though an excellent display of international unity and resilience, the decision to host the Olympics even in 2021 faced much opposition. An Ipsos Mori survery showed the 78 percent of Japanese residents did not want the games to be held at all, even with no spectators being allowed. Needless to say, the Games went on. Notable performances included swimmer Ahmed Hafnaoui from Tunisia winning the gold medal in th 400-meter freestyle, Allyson Felix became the most decorated U.S. athlete in track and field victory, and Qatar's Mutaz Essah Barshim and Italy's Gianmarco Tamberi sharing the gold medal in the men's high jump.
 
                     """)
-        
 
-
-
+# Works Cited Page
         
 elif selected_tab == "Works Cited":
     st.title("Works Cited")
