@@ -1,8 +1,9 @@
 # Import the Streamlit library
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
-selected_tab = st.sidebar.radio("Contents", options=["Overview", "Medalists Data", "Notable Olympic Games", "Works Cited"])
+selected_tab = st.sidebar.radio("Contents", options=["Overview", "Medalists Data", "Olympics Around the World", "Notable Olympic Games", "Works Cited"])
 
 if selected_tab == "Overview":
     st.title("Welcome to the Olympics Navigation Tool!")
@@ -108,6 +109,42 @@ elif selected_tab == "Medalists Data":
         st.subheader("Filtered Results")
         st.dataframe(filtered_df)
 
+elif selected_tab == "Olympics Around the World":
+    # Set page title
+    st.title("Olympics Around the World: Host Cities Map")
+
+    # Load dataset
+    df = pd.read_csv("OlympicsNavigator/data/hosts.csv")
+
+    # Add Season column
+    df['Season'] = df.apply(lambda row: 'Summer' if pd.notna(row['Summer']) else 'Winter', axis=1)
+
+    # Add hover text
+    df['HoverText'] = df.apply(lambda row: f"{row['Summer'] if pd.notna(row['Summer']) else row['Winter']} Olympics<br>"
+                                        f"Year: {row['Year']}<br>"
+                                        f"Season: {row['Season']}<br>"
+                                        f"City: {row['City']}<br>"
+                                        f"Country: {row['Country']}", axis=1)
+
+    # Create map
+    fig = px.scatter_geo(
+        df,
+        lat='Latitude',
+        lon='Longitude',
+        color='Season',
+        color_discrete_map={'Summer': 'red', 'Winter': 'blue'},
+        hover_name='City',
+        hover_data={'Latitude': False, 'Longitude': False, 'City': False, 'Season': False, 'HoverText': True},
+        text=df['Season'].apply(lambda s: '●'),
+        title="Olympic Host Cities (Summer in Red, Winter in Blue)"
+    )
+
+    fig.update_traces(marker=dict(size=8), hovertemplate=df['HoverText'])
+    fig.update_geos(showcountries=True, showcoastlines=True, showland=True, fitbounds="locations")
+    fig.update_layout(legend_title_text='Olympic Season')
+
+    # Display in Streamlit
+    st.plotly_chart(fig, use_container_width=True)
 
 elif selected_tab == "Notable Olympic Games":
 
