@@ -119,6 +119,11 @@ elif selected_tab == "Olympics Around the World":
     # Create a 'Season' column based on which column is not null
     hosts['Season'] = hosts.apply(lambda row: 'Summer' if pd.notna(row['Summer']) else 'Winter', axis=1)
 
+    # Create hover text
+    hosts['HoverText'] = hosts.apply(lambda row: f"{row['City']}, {row['Country']}<br>"
+                                                 f"{row['Season']} Olympics<br>"
+                                                 f"Year: {row['Year']}", axis=1)
+
     # Create the interactive map
     fig = px.scatter_geo(
         hosts,
@@ -126,7 +131,8 @@ elif selected_tab == "Olympics Around the World":
         lon='Longitude',
         color='Season',
         color_discrete_map={'Summer': 'red', 'Winter': 'blue'},
-        text=hosts['City'] + ", " + hosts['Country'],
+        hover_name='City',
+        hover_data={'Country': True, 'Year': True, 'Season': True},
         title="Olympic Host Cities"
     )
 
