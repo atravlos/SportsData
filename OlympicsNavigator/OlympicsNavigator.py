@@ -116,9 +116,6 @@ elif selected_tab == "Olympics Around the World":
     # Load dataset
     df = pd.read_csv("OlympicsNavigator/data/hosts.csv")
 
-    df["Latitude"] = df["Latitude"].astype(str).str.replace("-", "", regex=False)
-    df["Longitude"] = df["Longitude"].astype(str).str.replace("-", "", regex=False)
-
     # Add Season column
     df['Season'] = df.apply(lambda row: 'Summer' if pd.notna(row['Summer']) else 'Winter', axis=1)
 
