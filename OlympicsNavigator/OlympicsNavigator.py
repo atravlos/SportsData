@@ -169,16 +169,24 @@ Finally, the Berlin Olympic Games saw a lot of firsts. Sports like basketball, c
         st.caption("Winter Olympics Opening Ceremony - Lake Placid, USA. 1980")
         st.markdown("""
 
-Hosting the games for the second time (first in 1932), Lake Placid hosted 37 countries with 1,072 athletes competing in 38 events. These Olympics were marked by innovation as this was the first Olympcis to use artificial snow.    
+Hosting the games for the second time (first in 1932), Lake Placid hosted 37 countries with 1,072 athletes competing in 38 events. These Olympics were marked by innovation as this was the first Olympics to use artificial snow.    
 
-These Olympics also consisted of numerous memorable champions. Hanni Wenzel from Liechtenstein won gold in both giant and regular slalom events making Liechtenstein the smallest country to ever produce an Olympic champion. In the biathlon, Aleksander Tikhonov won his fourth straight gold medal in the event. In speed skating, American Eric Heiden won gold in all five olympic speed skating events while also setting an Olympic record in every one. Finally, the USA hockey team upset the USSR hockey team in the gold medal game which later yielded a Disney movie titled "Miracle on Ice."
-
+These Olympics also consisted of numerous memorable champions. Hanni Wenzel from Liechtenstein won gold in both giant and regular slalom events making Liechtenstein the smallest country to ever produce an Olympic champion. In the biathlon, Aleksander Tikhonov won his fourth straight gold medal in the event. In speed skating, American Eric Heiden won gold in all five olympic speed skating events while also setting an Olympic record in every one. Finally, the U.S.A hockey team upset the U.S.S.R hockey team in the gold medal game which later yielded a Disney movie titled "Miracle on Ice."
              
                     """)
 
         st.title("Summer 1980 - Moscow, Soviet Union : Boycott")
         st.image("OlympicsNavigator/images/Summer1980.jpg")
         st.caption("Summer Olympics Opening Ceremony - Moscow, Soviet Union. 1980")
+        st.markdown("""
+
+The year 1980 marked an escalation in the rivalry between the U.S. and U.S.S.R. Tensions in the Cold War rose as the two countries spearheaded the ideological conflict of Democracy vs. Communism. In 1979, the Soviet Union invaded Afghanistan. In response, U.S. President Jimmy Carter withdrew the U.S. and all American athletes from the Olympic Games in boycott. 55 other countries followed, however some nations such as Great Brtiain and Australia allowed their athletes to compete independently if they would like (because of the varying reasons for not participating and varied participation agreements, this number fluctuates depending on the source). As a result, only 80 nations participated in the 1980 Moscow Olympics, the lowest number since 1956. Additionally, National Broadcasting Company (NBC) also boycotted these games so little is known about these games in the U.S. .There were a total of 5,179 athletes competing in 203 events. This was the first time the Olympic Games were held in a socialist country. Four years later, the Summer Olympics were held in Los Angeles, U.S.A and the Soviet Union along with many Eastern European countries boycotted for security reasons.
+                    
+Notable performances from the games included gymnast Aleksander Dityatin of the U.S.S.R. winning 8 individual medals and Miruts Yifter of Ethiopia winning both the 5,000 and 10,000-meter runs. Finally, this was the first Olympic Games to include women's field hockey. However, the boycott left many voids in the field. Zimbabwe, who had officially become a country just a few months before was invited to send their field hockey team to the Olympics just a week before the games started. Amazingly, the team went on to go undefeated in the round-robin tournament and bring home the gold medal!
+                    
+
+
+""")
 
     with tab5:
         st.title("Summer 2021 - Tokyo, Japan : The COVID Olympics")
