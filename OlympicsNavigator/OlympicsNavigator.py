@@ -114,41 +114,23 @@ elif selected_tab == "Olympics Around the World":
     st.title("Olympics Around the World: Host Cities Map")
 
     # Load dataset
-    df = pd.read_csv("OlympicsNavigator/data/hosts.csv")
+    hosts = pd.read_csv("OlympicsNavigator/data/hosts.csv")
 
     # Create a 'Season' column based on which column is not null
-    df['Season'] = df.apply(lambda row: 'Summer' if pd.notna(row['Summer']) else 'Winter', axis=1)
-
-    # Add hover text for each Olympic host
-    df['HoverText'] = df.apply(lambda row: f"{row['Summer'] if pd.notna(row['Summer']) else row['Winter']} Olympics<br>"
-                                           f"Year: {row['Year']}<br>"
-                                           f"Season: {row['Season']}<br>"
-                                           f"City: {row['City']}<br>"
-                                           f"Country: {row['Country']}", axis=1)
-    
-    st.dataframe(df)
+    hosts['Season'] = hosts.apply(lambda row: 'Summer' if pd.notna(row['Summer']) else 'Winter', axis=1)
 
     # Create the interactive map
     fig = px.scatter_geo(
-        df,
+        hosts,
         lat='Latitude',
         lon='Longitude',
         color='Season',
         color_discrete_map={'Summer': 'red', 'Winter': 'blue'},
-        hover_name='City',
-        hover_data={
-            'Latitude': False,
-            'Longitude': False,
-            'City': False,
-            'Season': False,
-            'HoverText': True
-        },
-        text=df['Season'].apply(lambda s: '●'),
+        text=hosts['Season'].apply(lambda s: '●'),
         title="Olympic Host Cities (Summer in Red, Winter in Blue)"
     )
 
     # Adjust map and hover appearance
-    fig.update_traces(marker=dict(size=8), hovertemplate=df['HoverText'])
     fig.update_geos(showcountries=True, showcoastlines=True, showland=True, fitbounds="locations")
     fig.update_layout(legend_title_text='Olympic Season')
 
