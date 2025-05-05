@@ -125,6 +125,8 @@ elif selected_tab == "Olympics Around the World":
                                            f"Season: {row['Season']}<br>"
                                            f"City: {row['City']}<br>"
                                            f"Country: {row['Country']}", axis=1)
+    
+    st.dataframe(df)
 
     # Create the interactive map
     fig = px.scatter_geo(
