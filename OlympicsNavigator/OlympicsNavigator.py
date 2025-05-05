@@ -167,6 +167,14 @@ Finally, the Berlin Olympic Games saw a lot of firsts. Sports like basketball, c
         st.title("Winter 1980 - Lake Placid, USA : 'Miracle on Ice'")
         st.image("OlympicsNavigator/images/LakePlacid1980.jpeg")
         st.caption("Winter Olympics Opening Ceremony - Lake Placid, USA. 1980")
+        st.markdown("""
+
+Hosting the games for the second time (first in 1932), Lake Placid hosted 37 countries with 1,072 athletes competing in 38 events. These Olympics were marked by innovation as this was the first Olympcis to use artificial snow.    
+
+These Olympics also consisted of numerous memorable champions. Hanni Wenzel from Liechtenstein won gold in both giant and regular slalom events making Liechtenstein the smallest country to ever produce an Olympic champion. In the biathlon, Aleksander Tikhonov won his fourth straight gold medal in the event. In speed skating, American Eric Heiden won gold in all five olympic speed skating events while also setting an Olympic record in every one. Finally, the USA hockey team upset the USSR hockey team in the gold medal game which later yielded a Disney movie titled "Miracle on Ice."
+
+             
+                    """)
 
         st.title("Summer 1980 - Moscow, Soviet Union : Boycott")
         st.image("OlympicsNavigator/images/Summer1980.jpg")
