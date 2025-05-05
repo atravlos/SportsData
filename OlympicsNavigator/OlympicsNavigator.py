@@ -11,14 +11,14 @@ if selected_tab == "Overview":
     st.markdown("""
     ## About
 
-    This is a tool that allows users to both filter through Olympic medalist data and read about notable Olympic games.
+    This is a tool that allows users to both filter through Olympic medalist data, observe a map of Olympic host locations, and read about notable Olympic games!
 
     ## Table of Contents
 
     - **Overview**
-    - **Medalists Data**
-    - **Olympics Around the World**
-    - **Notable Olympic Games**
+    - **Medalists Data**: Filter through a dataset of all Olympic medalists
+    - **Olympics Around the World**: Interact with a map of all Olympic host cities.
+    - **Notable Olympic Games**: Read through summaries of notable Olympic games.
     - **Works Cited**
     """)
 
@@ -213,7 +213,7 @@ These Olympics also consisted of numerous memorable champions. Hanni Wenzel from
         st.caption("Summer Olympics Opening Ceremony - Moscow, Soviet Union. 1980")
         st.markdown("""
 
-The year 1980 marked an escalation in the rivalry between the U.S. and U.S.S.R. Tensions in the Cold War rose as the two countries spearheaded the ideological conflict of Democracy vs. Communism. In 1979, the Soviet Union invaded Afghanistan. In response, U.S. President Jimmy Carter withdrew the U.S. and all American athletes from the Olympic Games in boycott. 55 other countries followed, however some nations such as Great Brtiain and Australia allowed their athletes to compete independently if they would like (because of the varying reasons for not participating and varied participation agreements, this number fluctuates depending on the source). As a result, only 80 nations participated in the 1980 Moscow Olympics, the lowest number since 1956. Additionally, National Broadcasting Company (NBC) also boycotted these games so little is known about these games in the U.S. .There were a total of 5,179 athletes competing in 203 events. This was the first time the Olympic Games were held in a socialist country. Four years later, the Summer Olympics were held in Los Angeles, U.S.A and the Soviet Union along with many Eastern European countries boycotted for security reasons.
+The year 1980 marked an escalation in the rivalry between the U.S. and U.S.S.R. Tensions in the Cold War rose as the two countries spearheaded the ideological conflict of Democracy vs. Communism. In 1979, the Soviet Union invaded Afghanistan. In response, U.S. President Jimmy Carter withdrew the U.S. and all American athletes from the Olympic Games in boycott. 55 other countries followed, however some nations such as Great Brtiain and Australia allowed their athletes to compete independently if they would like (because of the varying reasons for not participating and varied participation agreements, this number fluctuates depending on the source). As a result, only 80 nations participated in the 1980 Moscow Olympics, the lowest number since 1956. Additionally, National Broadcasting Company (NBC) also boycotted these games so little is known about these games in the U.S. There were a total of 5,179 athletes competing in 203 events. This was the first time the Olympic Games were held in a socialist country. Four years later, the Summer Olympics were held in Los Angeles, U.S.A and the Soviet Union along with many Eastern European countries boycotted for security reasons.
                     
 Notable performances from the games included gymnast Aleksander Dityatin of the U.S.S.R. winning 8 individual medals and Miruts Yifter of Ethiopia winning both the 5,000 and 10,000-meter runs. Finally, this was the first Olympic Games to include women's field hockey. However, the boycott left many voids in the field. Zimbabwe, who had officially become a country just a few months before was invited to send their field hockey team to the Olympics just a week before the games started. Amazingly, the team went on to go undefeated in the round-robin tournament and bring home the gold medal!
                     
@@ -227,7 +227,7 @@ Notable performances from the games included gymnast Aleksander Dityatin of the 
 
 In March of 2020, the COVID-19 pandemic swept across the globe causing many events and gatherings to shut down and be cancelled. The Summer Olympic Games were no exception; in the best interest of the health of everyone involved, the games were pushed back to the following summer. The 2020 Games, held in the summer of 2021, included the most events ever (339) in 33 sports including the debut of many new events such as skateboarding, sport climbing, surfing, karate, BMX freestyle, and 3x3 basketball. The games also were the most gender-equal in history, sporting an almost 50/50 split of male/female athletes. 
                     
-Though an excellent display of international unity and resilience, the decision to host the Olympics even in 2021 faced much opposition. An Ipsos Mori survery showed the 78 percent of Japanese residents did not want the games to be held at all, even with no spectators being allowed. Needless to say, the Games went on. Notable performances included swimmer Ahmed Hafnaoui from Tunisia winning the gold medal in th 400-meter freestyle, Allyson Felix became the most decorated U.S. athlete in track and field victory, and Qatar's Mutaz Essah Barshim and Italy's Gianmarco Tamberi sharing the gold medal in the men's high jump.
+Though an excellent display of international unity and resilience, the decision to host the Olympics even in 2021 faced much opposition. An Ipsos Mori survery showed that 78 percent of Japanese residents did not want the games to be held at all, even with no spectators being allowed. Needless to say, the Games went on. Notable performances included swimmer Ahmed Hafnaoui from Tunisia winning the gold medal in th 400-meter freestyle, Allyson Felix became the most decorated U.S. athlete in track and field history, and Qatar's Mutaz Essah Barshim and Italy's Gianmarco Tamberi sharing the gold medal in the men's high jump.
 
                     """)
 
@@ -236,6 +236,8 @@ Though an excellent display of international unity and resilience, the decision 
 elif selected_tab == "Works Cited":
     st.title("Works Cited")
     st.markdown("""
+
+“120 Years of Olympic History: Athletes and Results.” Kaggle, 15 June 2018, www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results. 
 
 “The 1936 Olympics.” American Experience, Public Broadcasting Service, www.pbs.org/wgbh/americanexperience/features/goebbels-olympics/. Accessed 5 May 2025. 
 
@@ -250,6 +252,8 @@ Kennedy, Merrit, et al. “The 14 Moments That Swept Us Away at the Tokyo Olympi
 “Moscow 1980 Olympic Games.” Encyclopædia Britannica, Encyclopædia Britannica, inc., www.britannica.com/event/Moscow-1980-Olympic-Games. Accessed 5 May 2025. 
 
 Olympics.Com | Olympic Games, Medals, Results & Latest News, www.olympics.com/en/. Accessed 5 May 2025. 
+
+Scheaffer, Jon. “Olympic Host Cities.” Kaggle, 21 Nov. 2019, www.kaggle.com/datasets/jonscheaffer/olympic-host-cities. 
 
 Senesac, Emily. “No Snow in Sight: The NWS and the 1980 Olympic Winter Games.” National Weather Service Heritage, vlab.noaa.gov/web/nws-heritage/-/no-snow-in-sight-the-nws-and-the-1980-olympic-winter-games. Accessed 5 May 2025. 
 
