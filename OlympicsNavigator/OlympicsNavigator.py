@@ -113,6 +113,7 @@ elif selected_tab == "Medalists Data":
 elif selected_tab == "Olympics Around the World":
 
     st.title("Olympics Around the World: Host Cities Map")
+    st.write("This page contains an interactive map of all the Olympic host cities dating back to the 1896 Athens Summer Olympics, the first modern Olympic games. Feel free to hover over host cities (marked by dots) or filter by Summer/Winter by clicking on the legend!")
     hosts = pd.read_csv("OlympicsNavigator/data/hosts.csv")
 
     # Create a 'Season' column based on which column is not null
