@@ -125,9 +125,7 @@ elif selected_tab == "Olympics Around the World":
         lat='Latitude',
         lon='Longitude',
         color='Season',
-        color_discrete_map={'Summer': 'red', 'Winter': 'blue'},
-        text=hosts['Season'].apply(lambda s: '●'),
-        title="Olympic Host Cities (Summer in Red, Winter in Blue)"
+        title="Olympic Host Cities"
     )
 
     # Adjust map and hover appearance
