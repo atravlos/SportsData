@@ -126,8 +126,7 @@ elif selected_tab == "Olympics Around the World":
         lon='Longitude',
         color='Season',
         color_discrete_map={'Summer': 'red', 'Winter': 'blue'},
-        text="City",
-        text="Country",
+        text='City' + ", " + 'Country',
         title="Olympic Host Cities"
     )
 
