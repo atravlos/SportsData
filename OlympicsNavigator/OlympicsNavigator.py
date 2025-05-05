@@ -184,11 +184,16 @@ The year 1980 marked an escalation in the rivalry between the U.S. and U.S.S.R. 
                     
 Notable performances from the games included gymnast Aleksander Dityatin of the U.S.S.R. winning 8 individual medals and Miruts Yifter of Ethiopia winning both the 5,000 and 10,000-meter runs. Finally, this was the first Olympic Games to include women's field hockey. However, the boycott left many voids in the field. Zimbabwe, who had officially become a country just a few months before was invited to send their field hockey team to the Olympics just a week before the games started. Amazingly, the team went on to go undefeated in the round-robin tournament and bring home the gold medal!
                     
-
-
 """)
 
     with tab5:
         st.title("Summer 2021 - Tokyo, Japan : The COVID Olympics")
         st.image("OlympicsNavigator/images/2021Summer.jpg")
         st.caption("2021 Summer Olympics Flyer")
+        st.markdown("""
+
+In March of 2020, the COVID-19 pandemic swept across the globe causing many events and gatherings to shut down and be cancelled. The Summer Olympic Games were no exception; in the best interest of the health of everyone involved, the games were pushed back to the following summer. The 2020 Games, held in the summer of 2021, included the most events ever (339) in 33 sports including the debut of many new events such as skateboarding, sport climbing, surfing, karate, BMX freestyle, and 3x3 basketball. The games also were the most gender-equal in history, sporting an almost 50/50 split of male/female athletes. 
+                    
+Though an excellent display of international unity and resilience, the decision to host the Olympics even in 2021 faced much opposition. An Ipsos Mori survery showed the 78% of Japanese residents did not want the games to be held at all, even with no spectators being allowed. Needless to say, the Games went on. Notable performances included swimmer Ahmed Hafnaoui from Tunisia winning the gold medal in th 400-meter freestyle, Allyson Felix became the most decorated U.S. athlete in track and field victory, and Qatar's Mutaz Essah Barshim and Italy's Gianmarco Tamberi sharing the gold medal in the men's high jump.
+
+""")
