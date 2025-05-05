@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 
-selected_tab = st.sidebar.radio("Contents", options=["Overview", "Medalists Data", "Notable Olympic Games"])
+selected_tab = st.sidebar.radio("Contents", options=["Overview", "Medalists Data", "Notable Olympic Games", "Works Cited"])
 
 if selected_tab == "Overview":
     st.title("Welcome to the Olympics Navigation Tool!")
@@ -161,7 +161,7 @@ Ultimately, the 1936 Summer Olympic Games hosted 49 delegations, 3,963 athletes,
 
 Finally, the Berlin Olympic Games saw a lot of firsts. Sports like basketball, canoeing, and handball made their Olympic debuts. Additionally, American Marjorie Gestring became the youngest gold medalist, taking home the gold in springboard diving at just 13-years-old. However, it was 12-year-old Inge Sorensen from Denmark who became the youngest medalist of all time taking home the bronze in breastroke.
 
-""")
+                    """)
 
     with tab4:
         st.title("Winter 1980 - Lake Placid, USA : 'Miracle on Ice'")
@@ -184,7 +184,7 @@ The year 1980 marked an escalation in the rivalry between the U.S. and U.S.S.R. 
                     
 Notable performances from the games included gymnast Aleksander Dityatin of the U.S.S.R. winning 8 individual medals and Miruts Yifter of Ethiopia winning both the 5,000 and 10,000-meter runs. Finally, this was the first Olympic Games to include women's field hockey. However, the boycott left many voids in the field. Zimbabwe, who had officially become a country just a few months before was invited to send their field hockey team to the Olympics just a week before the games started. Amazingly, the team went on to go undefeated in the round-robin tournament and bring home the gold medal!
                     
-""")
+                    """)
 
     with tab5:
         st.title("Summer 2021 - Tokyo, Japan : The COVID Olympics")
@@ -196,4 +196,27 @@ In March of 2020, the COVID-19 pandemic swept across the globe causing many even
                     
 Though an excellent display of international unity and resilience, the decision to host the Olympics even in 2021 faced much opposition. An Ipsos Mori survery showed the 78 percent of Japanese residents did not want the games to be held at all, even with no spectators being allowed. Needless to say, the Games went on. Notable performances included swimmer Ahmed Hafnaoui from Tunisia winning the gold medal in th 400-meter freestyle, Allyson Felix became the most decorated U.S. athlete in track and field victory, and Qatar's Mutaz Essah Barshim and Italy's Gianmarco Tamberi sharing the gold medal in the men's high jump.
 
-""")
+                    """)
+        
+elif selected_tab == "Works Cited":
+    st.title("Works Cited")
+    st.markdown("""
+
+“The 1936 Olympics.” American Experience, Public Broadcasting Service, www.pbs.org/wgbh/americanexperience/features/goebbels-olympics/. Accessed 5 May 2025. 
+
+“1980 Summer Olympics.” Olympedia, www.olympedia.org/editions/20. Accessed 5 May 2025. 
+
+Gold, John R., and Margaret M. Gould. “Revival and Reinvention: The Olympic Games, Athens 1896.” Origins, The Ohio State University, origins.osu.edu/milestones/revival-and-reinvention-olympic-games-athens-1896. Accessed 5 May 2025. 
+
+“How We Got to the Tokyo Olympics despite a Global Pandemic.” CNN, Cable News Network, edition.cnn.com/interactive/2021/07/sport/tokyo-olympics-arduous-journey-timeline-spt-intl-cmd/. Accessed 5 May 2025. 
+
+Kennedy, Merrit, et al. “The 14 Moments That Swept Us Away at the Tokyo Olympics.” NPR, NPR, 8 Aug. 2021, www.npr.org/sections/tokyo-olympics-live-updates/2021/08/08/1025527026/tokyo-summer-olympics-best-moments-simone-biles-caeleb-dressel-allyson-felix#jumpers. 
+
+“Moscow 1980 Olympic Games.” Encyclopædia Britannica, Encyclopædia Britannica, inc., www.britannica.com/event/Moscow-1980-Olympic-Games. Accessed 5 May 2025. 
+
+Olympics.Com | Olympic Games, Medals, Results & Latest News, www.olympics.com/en/. Accessed 5 May 2025. 
+
+Senesac, Emily. “No Snow in Sight: The NWS and the 1980 Olympic Winter Games.” National Weather Service Heritage, vlab.noaa.gov/web/nws-heritage/-/no-snow-in-sight-the-nws-and-the-1980-olympic-winter-games. Accessed 5 May 2025. 
+
+Vignemont, Diane. Chamonix 1924: Inventing the Winter Olympics, France-Amerique, 23 Jan. 2024, france-amerique.com/chamonix-1924-inventing-the-winter-olympics/. 
+                """)
