@@ -130,7 +130,7 @@ The Olympics are here! It is fitting that the first ever modern Olympic games we
 A French aristocrat by the name of Pierre, baron de Coubertin pioneered the movement for an international Olympic Games and was a founding member of the [International Olympic Committee (IOC)](https://olympics.com/ioc). As a result, Coubertin also served as the president of the 1896 games.
 
 Though the Olympics of today still bare the same name, the events of 1896 looked much different. For example, rather than the modern Olympic pools that exist today for the swimming events, swimmers in the 1896 games were transported by boat out to sea and left to swim the required distance back to shore.
-""")
+                    """)
 
     with tab2:
         st.title("Winter 1924 - Chamonix France : The Inaugural Winter Olympic Games")
@@ -145,7 +145,7 @@ The games held in Chamonix, France in 1924 were first known as "Winter Sports We
 Some notable performances from these games were Charles Jewtraw (USA) taking home the first Olympic gold medal in the 500m speed skating and the Canadian Hockey Team winning their gold medal with a point differential of +119!
 
 The Winter Olympic Games we know today look drastically different than the Chamonix Games. For example, athletes used to have to carry their gear and equipment with them during the Opening Ceremony, bobsleigh teams did not wear helmets, and hockey players did not wear helmets or gloves! 
-""")
+                    """)
 
     with tab3:
         st.title("Summer 1936 - Berlin, Germany : Olympics and World War II")
@@ -197,6 +197,10 @@ In March of 2020, the COVID-19 pandemic swept across the globe causing many even
 Though an excellent display of international unity and resilience, the decision to host the Olympics even in 2021 faced much opposition. An Ipsos Mori survery showed the 78 percent of Japanese residents did not want the games to be held at all, even with no spectators being allowed. Needless to say, the Games went on. Notable performances included swimmer Ahmed Hafnaoui from Tunisia winning the gold medal in th 400-meter freestyle, Allyson Felix became the most decorated U.S. athlete in track and field victory, and Qatar's Mutaz Essah Barshim and Italy's Gianmarco Tamberi sharing the gold medal in the men's high jump.
 
                     """)
+        
+
+
+
         
 elif selected_tab == "Works Cited":
     st.title("Works Cited")
